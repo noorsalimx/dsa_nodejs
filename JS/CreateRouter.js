@@ -1,4 +1,5 @@
 const http = require('http');
+const port = 8080;
 
 let server = http.createServer(function (req, res) {   //create web server
     if (req.url == '/hi') { //check the URL of the current request
@@ -18,6 +19,6 @@ let server = http.createServer(function (req, res) {   //create web server
         res.end('Invalid Request!');
 });
 
-server.listen(8080, '127.0.0.1');
+server.listen(port, '127.0.0.1');
 
-console.log('Started on 8080');
+console.log(`App is started on ${port}`);
