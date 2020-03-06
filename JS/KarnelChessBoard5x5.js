@@ -3,13 +3,15 @@
  * This is a free space for you to 
  * write any Karel program you want.
  **/
-function main(){
-   //your code here
-   threeBeepers();
+function main() {
+   oneCycle();
+   oneCycle();
+   threeBeeper();
+}
+
+function oneCycle() {
+   threeBeeper();
    twoBeeperAndChangeRow();
-   threeBeepers();
-   twoBeeperAndChangeRow();
-   threeBeepers();
 }
 
 function threeBeepers() {
