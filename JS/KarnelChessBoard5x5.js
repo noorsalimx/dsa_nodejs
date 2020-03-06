@@ -5,14 +5,14 @@
  **/
 function main(){
    //your code here
-   threeBeeper();
+   threeBeepers();
    twoBeeperAndChangeRow();
-   threeBeeper();
+   threeBeepers();
    twoBeeperAndChangeRow();
-   threeBeeper();
+   threeBeepers();
 }
 
-function threeBeeper() {
+function threeBeepers() {
    beeperThenTwoMoves();
    beeperThenTwoMoves();
    putBeeper();
