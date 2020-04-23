@@ -1,9 +1,9 @@
-const EventEmitter = require("events");
-const door = new EventEmitter();
+const events = require("events");
+const MyEvent = new events.EventEmitter();
 
 function Myfunc() {
   console.log("HI THERE ! HAPPY LEARNING");
 }
 
-door.on("open", Myfunc);
-door.emit("open");
+MyEvent.on("open", Myfunc);
+MyEvent.emit("open");
