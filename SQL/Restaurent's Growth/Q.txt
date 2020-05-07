@@ -1,0 +1,5 @@
+A restaurant is visited by various customers during a day. 
+At the same time, the restaurant is advertising to increase customer revenue. 
+Write an SQL query to compute the moving average of how much customers 
+spent over a window of 7 days (current day and 6 days before) to analyze their business growth. 
+The output should contain three columns {visited_on, amount, avg_amount(avg over 7 days)}
