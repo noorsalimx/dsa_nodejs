@@ -21,8 +21,8 @@ function goodSegment(badNumbers, lower, upper) {
     len.push(arr.length);
   });
   console.log(len);
-  const long = Math.max(...len);
-  return long;
+  const longSegment = Math.max(...len);
+  return longSegment;
 }
 
 console.log(goodSegment([37, 7, 22, 15, 49, 60], 3, 48));
