@@ -17,3 +17,5 @@ function sum(limit) {
 }
 
 console.log(sum(2000000));
+
+sum(2000000);
