@@ -1,16 +1,13 @@
-//Add two numbers using process.argv
+// Add two numbers using command line args
+// Use process.argv
 
 // console.log(process.argv);
 
 function add() {
   let sum = 0;
-  for (i = 2; i < process.argv.length; i++) {
+  for (let i = 2; i < process.argv.length; i++) {
     sum += Number(process.argv[i]);
   }
-
-  /* for (let num of process.argv) {
-    sum += num;
-  } */
 
   return sum;
 }
