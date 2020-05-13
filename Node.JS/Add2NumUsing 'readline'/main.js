@@ -1,4 +1,4 @@
-/* add two number using readline core module*/
+/* add two number using readline core module */
 
 const readline = require("readline");
 
