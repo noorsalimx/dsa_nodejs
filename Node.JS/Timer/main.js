@@ -6,3 +6,11 @@ function message() {
 }
 
 setInterval(message, 5000);
+
+// Timer2
+// Write a function to log TCS 2 seconds after the server is started.
+
+function message() {
+  console.log("TCS");
+}
+setTimeout(message, 2000);
