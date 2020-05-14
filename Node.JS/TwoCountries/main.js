@@ -7,6 +7,12 @@ function factorial(n) {
   return fact;
 }
 
+/**
+ * Get sum of factorial of digits of a number
+ * Accepts string of a number
+ * @param {*} numStr
+ */
+
 function sumOfFact(numStr) {
   let sum = 0;
   for (let i in numStr) {
@@ -21,19 +27,19 @@ function sumOfFact(numStr) {
 
 function maxStrength(n) {
   // Write your code here
-  let idArr = [n];
+  let ids = [n];
   //do {
   let numStr = n.toString();
   if (numStr.length > 1) {
     let sum = sumOfFact(numStr);
-    idArr.push(sum);
+    ids.push(sum);
   } else {
-    idArr.push(factorial(Number(n)));
+    ids.push(factorial(Number(n)));
   }
-  let max = Math.max(...idArr);
-  let lastElement = sumOfFact(`${idArr[idArr.length - 1]}`);
+  let max = Math.max(...ids);
+  let lastElement = sumOfFact(`${ids[ids.length - 1]}`);
   console.log(lastElement);
   //} while (max);
-  return idArr;
+  return ids;
 }
 console.log(maxStrength(5));
