@@ -1,6 +1,6 @@
 const http = require("http");
 const host = "127.0.0.1";
-const port = 8080;
+const port = 3000;
 
 let server = http.createServer(function (req, res) {
   //create web server
