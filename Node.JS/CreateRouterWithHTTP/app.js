@@ -10,11 +10,11 @@ let server = http.createServer(function (req, res) {
     res.writeHead(200, { "Content-Type": "text/html" });
 
     // set response content
-    res.write(`Url is 'http://127.0.0.1:8080${req.url}'`);
+    res.write(`Url is 'http://127.0.0.1:3000${req.url}'`);
     res.end();
   } else if (req.url == "/hello") {
     res.writeHead(200, { "Content-Type": "text/html" });
-    res.write(`Url is 'http://127.0.0.1:8080${req.url}'`);
+    res.write(`Url is 'http://127.0.0.1:3000${req.url}'`);
     res.end();
   } else res.end("Invalid Request!");
 });
