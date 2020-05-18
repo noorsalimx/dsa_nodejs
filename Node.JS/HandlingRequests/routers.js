@@ -1,5 +1,9 @@
-function route(path) {
-  console.log("From router. Request received for : ", path);
+function route(handler, path) {
+  if (typeof handler[path] === "function") {
+    handler[path]();
+  } else {
+    console.log("Invalid request", path);
+  }
 }
 
 module.exports = { route };
