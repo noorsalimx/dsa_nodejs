@@ -5,6 +5,6 @@ const handlers = require("./handlers");
 let handler = {};
 handler["/"] = handlers.home;
 handler["/home"] = handlers.home;
-handler["/review"] = handlers.review;
+handler["/newpage"] = handlers.review;
 
 server.startServer(handler, routers.route);

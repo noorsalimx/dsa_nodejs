@@ -4,13 +4,22 @@ const port = process.env.PORT || 3000;
 
 function startServer(handler, route) {
   const server = http.createServer(function (req, res) {
-    res.writeHead(200, { "Content-Type": "text/html" });
-    res.write("Application started from app module. ");
     const path = url.parse(req.url).pathname;
     console.log("Request received for :", path);
-    route(handler, path);
+
+    let reviewData = "";
+    req.setEncoding("UTF-8");
+    req.addListener("data", function (chunk) {
+      reviewData += chunk;
+    });
+
+    req.addListener("end", function () {
+      route(handler, path, res, reviewData);
+    });
+
+    /* res.writeHead(200, { "Content-Type": "text/plain" });
     res.write(`Request received for : ${url.parse(req.url).pathname}`);
-    res.end();
+    res.end(); */
   });
 
   server.listen(port, () => {
