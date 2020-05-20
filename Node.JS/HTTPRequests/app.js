@@ -1,34 +1,41 @@
-// Get data from a public website and save to a fle
+/**
+ * Get data from a public website and save to a file
+ * Using https module
+ */
 
-// Using https module
 const https = require("https");
 const fs = require("fs");
 
-const hostname = "https://en.wikipedia.org/wiki/Main_Page";
-const port = 443;
-const path = "./wiki/Nodejs";
+const options = {
+  hostname: "en.wikipedia.org",
+  port: 443,
+  path: "/wiki/Nodejs",
+  method: "GET",
+};
 
-if (!fs.existsSync(path)) {
-  fs.mkdirSync(path);
-}
+let req = https.request(options, (res) => {
+  console.log("StatusCode : ", res.statusCode);
 
-https
-  .get(hostname, (res) => {
-    let data = "";
+  let resBody = "";
 
-    // A chunk of data has been recieved.
-    res.on("data", (chunk) => {
-      data += chunk;
-    });
-
-    // The whole response has been received. Print out the result.
-    res.on("end", () => {
-      fs.appendFile("Nodejs.html", data, function (err) {
-        if (err) throw err;
-        console.log("Saved!");
-      });
-    });
-  })
-  .on("error", (err) => {
-    console.log("Error: " + err.message);
+  res.setEncoding("UTF8");
+  res.on("data", (chunk) => {
+    resBody += chunk;
   });
+
+  res.on("end", () => {
+    // process.stdout.write(wikidata);
+    fs.writeFile("Nodejs.html", resBody, (err) => {
+      if (err) {
+        console.error(err);
+        throw err;
+      }
+    });
+  });
+});
+
+req.on("error", (err) => {
+  console.error("Error: " + err.message);
+});
+
+req.end();
