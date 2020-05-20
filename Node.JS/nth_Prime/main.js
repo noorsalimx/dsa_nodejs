@@ -29,4 +29,5 @@ function nthPrime(n) {
   return primes[primes.length - 1];
 }
 
-nthPrime(10001);
+nthPrime(10001); // 104743
+console.log(nthPrime(10001));
