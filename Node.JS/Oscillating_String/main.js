@@ -4,7 +4,7 @@ function changeSort(str) {
   let dsc = [];
   arrStr.filter((item, index) => {
     arrStr.indexOf(item) === index ? asc.push(item) : dsc.push(item);
-  }); // Splits into two array by repeation
+  }); // Splits into two array by repeatation
   let sortedAsc = asc.sort();
   let sortedDsc = dsc.sort().reverse();
   let finalStr = sortedAsc.join("") + sortedDsc.join("");
