@@ -1,2 +1,0 @@
-Hello!!
-This text content is coming from 'To_Read.txt' file.
