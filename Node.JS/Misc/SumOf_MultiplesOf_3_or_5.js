@@ -9,5 +9,4 @@ function sum() {
 }
 
 console.log(sum());
-console.log(__dirname);
-console.log(__filename);
+sum();
