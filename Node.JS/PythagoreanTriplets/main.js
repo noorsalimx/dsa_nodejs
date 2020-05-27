@@ -11,7 +11,7 @@ function pythagoreanTriplet() {
     }
   } */
 
-  //  Find product of a * b * c where a + b + c = 1000.
+  //  Find a, b, c for given sum (a + b + c = 1000).
   const sum = 1000;
 
   for (let a = 1; a <= sum / 3; a++) {
