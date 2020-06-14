@@ -1,9 +1,12 @@
 body {
   background-color: #eee;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 h1 {
   color: green;
 }
 p {
   color: brown;
+  font-family: "Ubuntu", sans-serif;
 }
