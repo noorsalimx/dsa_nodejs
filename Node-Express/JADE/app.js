@@ -6,7 +6,7 @@ app.use(express.static("public"));
 app.set("view engine", "jade"); // specify the engine name
 
 app.use((req, res, next) => {
-  console.log("Timestamp :", new Date().toLocaleString());
+  console.log({ Time: new Date().toLocaleTimeString() });
   next();
 });
 
@@ -19,11 +19,24 @@ app.get("/send", (req, res) => {
 
 // JADE
 app.get("/jade", (req, res) => {
-  let jade = {
+  let obj = {
     title: "MyTitle",
     message: "Hello from JADE",
   };
-  res.render("index", jade); // By default jade looks into 'views' dir
+  res.render("index", obj); // By default jade looks into 'views' dir
+});
+app.get("/loop", (req, res) => {
+  let obj = {
+    title: "loop",
+    message: "Hello from JADE LOOP",
+  };
+  res.render("loop", obj); // By default jade looks into 'views' dir
 });
 
-app.listen(PORT, () => console.log("App started on", PORT));
+app.listen(PORT, () =>
+  console.log({
+    App: "View Engine",
+    Message: "App started on " + PORT,
+    TimeStamp: new Date().toLocaleString(),
+  })
+);

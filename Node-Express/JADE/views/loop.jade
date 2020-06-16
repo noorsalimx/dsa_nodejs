@@ -1,0 +1,9 @@
+extends layout
+block content
+  h1= message
+  p Welcome to #{ title }
+  - names = ['Google', 'Microsoft', 'Facebook', 'Apple']
+  ul
+  //- for loop
+  each name in names
+    li #{ name }
