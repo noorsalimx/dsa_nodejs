@@ -9,12 +9,16 @@
   },
   "keywords": [
     "node",
-    "express"
+    "express",
+    "jade",
+    "pug",
+    "handlbars"
   ],
   "author": "Noor Salim",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
     "jade": "^1.11.0"
   }
 }
