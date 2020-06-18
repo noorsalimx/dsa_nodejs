@@ -19,7 +19,7 @@ app.get("/send", (req, res) => {
 });
 
 // JADE
-app.get("/jade", (req, res) => {
+app.get("/index", (req, res) => {
   let obj = {
     title: "MyTitle",
     message: "Hello from JADE",
