@@ -25,7 +25,6 @@ app.get("/index", (req, res) => {
 
 app.listen(_const.PORT, () =>
   console.log({
-    App: "Handlebars Engine",
     Message: "App started on " + _const.PORT,
     TimeStamp: new Date().toLocaleString(),
   })
