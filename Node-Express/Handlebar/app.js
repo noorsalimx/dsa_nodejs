@@ -1,7 +1,7 @@
 const express = require("express");
 const hbs = require("express-handlebars");
 
-const _const = require("../config/constants");
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.engine("hbs", hbs({ extname: "hbs", defaultLayout: "layout", layoutsDir: __dirname + "/views/layouts" }));
@@ -23,9 +23,9 @@ app.get("/index", (req, res) => {
   res.render("index", { title: "Handlebars", condition: true, arr: [3, 5, 7] });
 });
 
-app.listen(_const.PORT, () =>
+app.listen(PORT, () =>
   console.log({
-    Message: "App started on " + _const.PORT,
+    Message: "App started on " + PORT,
     TimeStamp: new Date().toLocaleString(),
   })
 );
