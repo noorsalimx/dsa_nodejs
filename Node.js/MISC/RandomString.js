@@ -2,7 +2,6 @@
  * This function generates a specific length of random string,
  * combination of [A-Za-z0-9_]
  */
-
 function generateRandomString(strlen) {
   const chars = [...new Array(26).keys()].map((n) => String.fromCharCode(65 + n)).join("");
   // [...Array(26)].map((_, n) => String.fromCharCode(65 + n)).join('');
