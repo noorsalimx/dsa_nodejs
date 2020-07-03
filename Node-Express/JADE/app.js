@@ -1,4 +1,5 @@
 const express = require("express");
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -36,7 +37,6 @@ app.get("/loop", (req, res) => {
 
 app.listen(PORT, () =>
   console.log({
-    App: "View Engine",
     Message: "App started on " + PORT,
     TimeStamp: new Date().toLocaleString(),
   })

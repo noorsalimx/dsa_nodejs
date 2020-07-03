@@ -14,6 +14,6 @@ function add() {
 
 console.log(add());
 
-/* Run this function --> node app.js 4 5 6
+/* Execute this function --> node app.js 4 5 6
 This will return 4+5+6=15
  */
