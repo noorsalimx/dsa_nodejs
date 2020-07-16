@@ -1,8 +1,9 @@
 /**
  * This function generates a specific length of random string,
- * combination of [A-Za-z0-9_]
+ * combination of [A-Za-z0-9(SP_CHARS)]
  */
 function generateRandomString(strlen) {
+  // const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const chars = [...new Array(26).keys()].map((n) => String.fromCharCode(65 + n)).join("");
   // [...Array(26)].map((_, n) => String.fromCharCode(65 + n)).join('');
   // specialKeys = "!#$%&'()*+,-.\"/:;<=>?@[]^_`{|}~";
