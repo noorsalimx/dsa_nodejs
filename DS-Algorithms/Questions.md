@@ -1,1 +1,1 @@
-### 1. Write a function which takes in a string and returns counts of each characters in string.
+### 1. [Write a function which takes in a string and returns counts of each characters in string.](https://github.com/mrlazyg/ds-problems-solutions/blob/master/DS-Algorithms/Q1.js)
