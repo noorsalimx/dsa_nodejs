@@ -31,8 +31,13 @@ function sumZero(arr) {
       left++;
     }
   }
-  console.log("Undefined");
+  console.log('Undefined');
   return;
 }
 
+// Solution is implemented considering array is sorted
+
 sumZero([-7, -4, -3, -2, 0, 1, 4, 10]);
+sumZero([-3, -2, -1, 0, 1, 2, 3]);
+sumZero([-2, 0, 1, 3]);
+sumZero([1, 2, 3]);

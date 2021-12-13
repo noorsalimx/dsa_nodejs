@@ -7,3 +7,7 @@
 #### 4. [Write a function which accepts an array. First value in array is a string and second one is string of words separated by comma. Return an array which contains two words which are substring of the string and presented in seond string](https://github.com/mrlazyg/ds-problems-solutions/blob/master/DSA/Q4.js)
 
 #### 5. [Write a function which accepts an array and target integer. Find the index of elements fro array to get target value by adding two elements from array](https://github.com/mrlazyg/ds-problems-solutions/blob/master/DSA/Q5.js)
+
+#### 6. [Find the sub-array of specified length in a way that the sum is maximum](https://github.com/mrlazyg/ds-problems-solutions/blob/master/DSA/Q6.js)
+
+#### 7. [Find factorial upto nth term in recursive](https://github.com/mrlazyg/ds-problems-solutions/blob/master/DSA/Q7.js)
