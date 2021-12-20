@@ -11,3 +11,5 @@
 #### 6. [Find the sub-array of specified length in a way that the sum is maximum](https://github.com/mrlazyg/ds-problems-solutions/blob/master/DSA/Q6.js)
 
 #### 7. [Find factorial upto nth term in recursive](https://github.com/mrlazyg/ds-problems-solutions/blob/master/DSA/Q7.js)
+
+#### 8. [Write function for Recaman's Sequence](https://github.com/mrlazyg/ds-problems-solutions/blob/master/DSA/recaman_suquence.js)
