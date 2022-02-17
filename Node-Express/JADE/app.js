@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.set("views", __dirname + "/views"); //  OPTIONAL
-app.set("view engine", "jade"); // specify the engine name
+app.set("view engine", "pug"); // specify the engine name
 app.use(express.static("public"));
 
 app.use((req, res, next) => {
