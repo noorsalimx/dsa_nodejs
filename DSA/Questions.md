@@ -12,4 +12,6 @@
 
 #### 7. [Find factorial upto nth term in recursive](https://github.com/mrlazyg/ds-problems-solutions/blob/master/DSA/Q7.js)
 
-#### 8. [Write function for Recaman's Sequence](https://github.com/mrlazyg/ds-problems-solutions/blob/master/DSA/recaman_suquence.js)
+#### 8. [Write function for Recaman's Sequence](https://github.com/mrlazyg/ds-problems-solutions/blob/master/DSA/recaman_sequence.js)
+
+#### 8. [We have a list of lexicographically sorted strings A. We also have a string B. We need the first and last indexes of strings from A which are having their prefix as B. A can contain duplicate strings. Return [-1, -1] if no such prefix exists. A = [a, aa, aab, b, bb, bba, bbb], B = bb. Output: [4, 6]](https://github.com/mrlazyg/ds-problems-solutions/blob/master/DSA/prefix_string.js)
