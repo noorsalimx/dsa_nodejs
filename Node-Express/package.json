@@ -18,7 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.19.2",
+    "express": "^4.21.0",
     "express-handlebars": "^6.0.2",
     "pug": "^3.0.3"
   }
